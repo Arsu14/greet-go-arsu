@@ -1,0 +1,35 @@
+<div class = "card">
+  <div class = "card-header">
+    <strong>Add New Student</strong>
+  </div>
+
+  <form class = "form-horizontal" #studentForm="ngForm">
+    <div class = "card-body">
+      <br>
+      <div class = "row">
+        <label class = "col-md-2 control-label"></label>
+        <div class = "col-md-4 md-3">
+          <input type = "text" class = "form-control" placeholder="Name"  id ="name"  name ="name" [(ngModel)]="student.name" >
+        </div>
+      </div>
+      <br>
+      <div class = "row">
+        <label class = "col-md-2 control-label"></label>
+        <div class = "col-md-4 md-3">
+          <input type = "text" class = "form-control" placeholder="Surname"   id="surname"    name ="surname" [(ngModel)]="student.surname" >
+        </div>
+      </div>
+      <br>
+      <div class = "row">
+        <label class = "col-md-2 control-label"></label>
+        <div class = "col-md-4 md-3">
+          <input type = "text" class = "form-control" placeholder="GroupName"    id="groupName"  name ="groupName" [(ngModel)]="student.groupName"  >
+        </div>
+      </div>
+
+    </div>
+    <div class = "card-footer text-right">
+      <button type = "button" class = "btn btn-success" (click) = "saveStudent()" >Save</button>
+    </div>
+  </form>
+</div>

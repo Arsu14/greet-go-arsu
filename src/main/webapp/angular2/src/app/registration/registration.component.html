@@ -1,0 +1,28 @@
+<div class = "card">
+  <div class = "card-header">
+    <strong>Add New Student</strong>
+  </div>
+
+  <form class = "form-horizontal" #registrationForm="ngForm" >
+    <div class = "card-body">
+      <br>
+      <div class = "row">
+        <label class = "col-md-2 control-label"></label>
+        <div class = "col-md-4 md-3">
+          <input type = "text" class = "form-control" placeholder="login" id = "login" name = "login" [(ngModel)]="registration.login" >
+        </div>
+      </div>
+      <br>
+      <div class = "row">
+        <label class = "col-md-2 control-label"></label>
+        <div class = "col-md-4 md-3">
+          <input type = "text" class = "form-control" placeholder="password"  id = "password"  name = "password"   [(ngModel)]="registration.password">
+        </div>
+      </div>
+
+    </div>
+    <div class = "card-footer text-right">
+      <button type = "button" class = "btn btn-success" (click) = "checkRegistration()">Authorization</button>
+    </div>
+  </form>
+</div>
